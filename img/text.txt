@@ -1,0 +1,60 @@
+pasta - (https://static.quizur.com/i/b/5772cd3fb72069.085944695772cd3f9d16e1.36076256.png)
+delicious - (https://i.pinimg.com/236x/fd/d8/a8/fdd8a8f122aa9ddba7b980ffe43fedfe.jpg)
+shoping card icon -(https://cdn-icons-png.flaticon.com/128/833/833314.png)
+salat - (https://shahter.by/sites/default/files/u1/salat_grecheskiy.jpg)
+eats 1 -(https://img.freepik.com/free-photo/top-view-arrangement-with-vegetables_23-2148494043.jpg?semt=ais_hybrid)
+eats 2 - (https://img.freepik.com/premium-photo/buddha-bowl-salad-with-grilled-turkey-arugula-avocado-carrots-zucchini-balanced-clean-eating-top-view-healhty-lunch-bowl-balanced-food-concept_440424-207.jpg?semt=ais_hybrid)
+eats 3 - (https://img.freepik.com/free-photo/top-view-plate-with-rice-eggs_23-2148487816.jpg?semt=ais_hybrid)
+star - (https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid)
+circle eat - (https://www.vecteezy.com/photo/30696181-brazilian-food-image)
+
+
+.welcome {
+  margin-top: 166px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Обеспечиваем вертикальное выравнивание */
+}
+
+.welcome-content {
+  
+  justify-content: space-between;
+  max-width: 1200px; /* Ограничиваем ширину для лучшего отображения на больших экранах */
+  width: 100%;
+}
+
+.welcome-content h1 {
+  line-height: 110%;
+  margin-bottom: 30px;
+}
+.welcome-content h1 span
+{
+ 
+
+ circle girl -(https://img.freepik.com/free-photo/high-angle-woman-posing-mirror_23-2149426415.jpg?ga=GA1.1.183343904.1740841489&semt=ais_hybrid)
+
+ backphone - (https://img.freepik.com/premium-vector/white-gray-geometric-pattern-background-vector_53876-170008.jpg?ga=GA1.1.183343904.1740841489&semt=ais_hybrid)
+
+
+
+
+
+ const imgs = document.querySelectorAll('.a');
+var index = 0;
+
+function show() {
+    setTimeout(show, 2000);
+
+    for (let i = 0; i < imgs.length; i++) {
+        imgs[i].classList.add('hidden');
+    }
+
+    index++;
+    if (index >= imgs.length) {
+        index = 0; // Устанавливаем индекс на 0, чтобы показывать первое изображение
+    }
+    imgs[index].classList.remove('hidden');
+}
+
+show();

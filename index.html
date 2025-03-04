@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="index_css.css">
+    <script src="header.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img id="basket" width="60px" height="60px" class="header-content-logo" src="img/for_header.jpg" alt="">
+                <nav>
+                    <a class="checked" href="home">home</a>
+                    <a href="menu">menu</a>
+                    <a href="about us">about us</a>
+                    <a href="order online">order online</a>
+                    <a href="reservation">reservation</a>
+                    <a href="contact us">contact us</a>
+                </nav>
+                <div class="header-content-last">
+                    <a href="#">
+                        <img width="48px" height="48px" src="img/basket.png" alt="">
+                    </a>
+                    <a href="#" id="loginBtn">log in</a>
+                </div>
+            </div>
+        </div>
+    </header>
+        <!-- Модальное окно -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Регистрация</h2>
+        <form>
+            <label for="username">Имя пользователя:</label><br>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Пароль:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+</div>
+
+    <!--main-->
+    <main>
+        <div class="container">
+            <div class="main-content">
+                <div>
+                    <div class="main-content_about">Restauran</div>
+                    <h1>italian <br>colsine</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla sapiente esse praesentium itaque sit, earum nihil odio soluta quasi quisquam mollitia fugiat nam quia ad temporibus error explicabo voluptatum reiciendis.</p>
+                    <div class="main-content_buttoms">
+                        <a href="#">
+                            Order now
+                        </a>
+                        <a href="#">
+                            reservation
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    
+                        <img class="a" src="img/spagetty.png" alt=""></li>
+                        <img class="a" width="640" height="480" src="img/salat.webp" alt=""></li>
+                        <img class="a" width="640" height="480" src="img/a_lot_of_dress.webp" alt=""></li>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--new block welcome-->
+    <section class="welcome">
+        <div class="container">
+            <div class="welcome-content">
+                <div>
+                    <img  src="img/greek_salat.jpg" alt="">
+                </div>
+                <div>
+                    <h1>Welcome to <br> <span>delizioso<span></span></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, alias, ducimus, aliquid quos excepturi optio perferendis aperiam ad vitae magni saepe fugit sequi voluptatem error iusto at. Dolorem, ipsa repudiandae!</p>
+                    <div class="welcome-content-buttons">
+                        <a href="#">
+                            see our menu
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!--menu-->
+    <section class="menu">
+        <div class="container">
+            <h2>our popular menu</h2>
+            <div class="menu-buttons">
+                <a id="all_category" class="checked" href="#">all category</a>
+                <a id="dinner" href="#">dinner</a>
+                <a id="lanch" href="#">lanch</a>
+                <a id="desert" href="#">desert</a>
+                <a id="dring" href="#">dring</a>
+            </div>
+            <!--cards menu-->
+            <div class="menu-items">
+                <!--card menu 1-->
+                <div id="1" class="menu-item">
+                    <img width="300px" height="300px" src="img/for_menu_1.avif" alt="">
+                    <h3>spagetty</h3>
+                    <div class="menu-item_raiting">
+                        <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                        <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                        <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                        <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sed quae blanditiis consequatur, omnis voluptas, error rerum quod excepturi ipsa atque, explicabo vitae cum magni mollitia deserunt magnam ex sit!</p>
+                        <div class="menu-item_last">
+                            <h4 class="menu-item_last-price" id="price">
+                                <span id="totalPrice">12.05$</span>
+                            </h4>
+                            <a href="#" id="orderButton">Order Now</a>
+                        </div>
+                        <div class="counterContainer" id="counterContainer" style="display: none;">
+                            <button id="decreaseButton">-</button>
+                            <span id="quantity">1</span>
+                            <button id="increaseButton">+</button>
+                        </div>
+                    </div>
+                </div>
+            
+
+
+
+
+    <!--card menu 2-->
+        <div id="1" class="menu-item">
+            <img width="300px" height="300px" src="img/meat.avif" alt="">
+            <h3>meat</h3>
+            <div class="menu-item_raiting">
+                <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sed quae blanditiis consequatur, omnis voluptas, error rerum quod excepturi ipsa atque, explicabo vitae cum magni mollitia deserunt magnam ex sit!</p>
+                <div class="menu-item_last">
+                    <h4 class="menu-item_last-price" id="price_1">
+                        <span id="totalPrice_1">12.05$</span>
+                    </h4>
+                    <a href="#" id="orderButton_1">Order Now</a>
+                </div>
+                <div class="counterContainer" id="counterContainer_1" style="display: none;">
+                    <button id="decreaseButton_1">-</button>
+                    <span id="quantity_1">1</span>
+                    <button id="increaseButton_1">+</button>
+                </div>
+            </div>
+        </div>
+    
+    <!--card menu 3-->
+        <div id="2" class="menu-item">
+            <img width="300px" height="300px" src="img/eggs.avif" alt="">
+            <h3>eggs</h3>
+            <div class="menu-item_raiting">
+                <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sed quae blanditiis consequatur, omnis voluptas, error rerum quod excepturi ipsa atque, explicabo vitae cum magni mollitia deserunt magnam ex sit!</p>
+                <div class="menu-item_last">
+                    <h4 class="menu-item_last-price" id="price_2">
+                        <span id="totalPrice_2">16.05$</span>
+                    </h4>
+                    <a href="#" id="orderButton_2">Order Now</a>
+                </div>
+                <div class="counterContainer" id="counterContainer_2" style="display: none;">
+                    <button id="decreaseButton_2">-</button>
+                    <span id="quantity_2">1</span>
+                    <button id="increaseButton_2">+</button>
+                </div>
+            </div>
+        </div>
+    
+    <!--card menu 4-->
+        <div id="2" class="menu-item">
+            <img width="300px" height="300px" src="https://img.freepik.com/free-photo/top-view-plate-with-rice-eggs_23-2148487816.jpg?semt=ais_hybrid" alt="">
+            <h3>blue ocean</h3>
+            <div class="menu-item_raiting">
+                <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sed quae blanditiis consequatur, omnis voluptas, error rerum quod excepturi ipsa atque, explicabo vitae cum magni mollitia deserunt magnam ex sit!</p>
+                <div class="menu-item_last">
+                    <h4 class="menu-item_last-price" id="price_3">
+                        <span id="totalPrice_3">15.05$</span>
+                    </h4>
+                    <a href="#" id="orderButton_3">Order Now</a>
+                </div>
+                <div  class="counterContainer" id="counterContainer_3" style="display: none;">
+                    <button id="decreaseButton_3">-</button>
+                    <span id="quantity_3">1</span>
+                    <button id="increaseButton_3">+</button>
+                </div>
+            </div>
+        </div>
+    
+    <!--card menu 5-->
+        <div id="3" class="menu-item">
+            <img width="300px" height="300px" src="https://img.freepik.com/free-photo/top-view-plate-with-rice-eggs_23-2148487816.jpg?semt=ais_hybrid" alt="">
+            <h3>red ocean</h3>
+            <div class="menu-item_raiting">
+                <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sed quae blanditiis consequatur, omnis voluptas, error rerum quod excepturi ipsa atque, explicabo vitae cum magni mollitia deserunt magnam ex sit!</p>
+                <div class="menu-item_last">
+                    <h4 class="menu-item_last-price" id="price_4">
+                        <span id="totalPrice_4">15.05$</span>
+                    </h4>
+                    <a href="#" id="orderButton_4">Order Now</a>
+                </div>
+                <div class="counterContainer" id="counterContainer_4" style="display: none;">
+                    <button id="decreaseButton_4">-</button>
+                    <span id="quantity_4">1</span>
+                    <button id="increaseButton_4">+</button>
+                </div>
+            </div>
+        </div>
+    
+    <!--card menu 6-->
+        <div id="4" class="menu-item">
+            <img width="300px" height="300px" src="https://img.freepik.com/free-photo/top-view-plate-with-rice-eggs_23-2148487816.jpg?semt=ais_hybrid" alt="">
+            <h3>pink ocean</h3>
+            <div class="menu-item_raiting">
+                <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                <img width="20px" height="20px" src="https://cdn-icons-png.freepik.com/256/3666/3666602.png?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sed quae blanditiis consequatur, omnis voluptas, error rerum quod excepturi ipsa atque, explicabo vitae cum magni mollitia deserunt magnam ex sit!</p>
+                <div class="menu-item_last">
+                    <h4 class="menu-item_last-price" id="price_5">
+                        <span id="totalPrice_5">13.05$</span>
+                    </h4>
+                    <a href="#" id="orderButton_5">Order Now</a>
+                </div>
+                <div class="counterContainer" id="counterContainer_5" style="display: none;">
+                    <button id="decreaseButton_5">-</button>
+                    <span id="quantity_5">1</span>
+                    <button id="increaseButton_5">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-peg">
+        <a class="back" href="#"> <span><</span> </a>
+        <a class="page" href="#"><span>1</span></a>
+        <a class="page" href="#"><span>2</span></a>
+        <a class="page" href="#"><span>3</span></a>
+        <a class="dot" href="#"><span>...</span></a>
+        <a class="next" href="#"><span>></span></a>
+    </div>
+        </div>
+    </section>
+    <!--reservation-->
+    <section class="reservation">
+     <div class="container">
+        <div class="reservation-content">
+            <div>
+                <img width="600px" height="600px" src="img/pizza.webp" alt="">
+            </div>
+            <div>
+                <h2>
+                    Let's reserve <br> <span> a table</span>
+            
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quasi? Corrupti, illum rerum a tempora molestiae natus voluptate nesciunt quasi minima aperiam eos illo nobis ex vel, deserunt nulla eveniet!
+                </p>
+                <div class="reservation-content_buttons">
+                    <a href="#">
+                        reservation
+                    </a>
+                </div>
+            </div>
+        </div>
+     </div>   
+    </section>
+    <!--shefes-->
+
+    <section class="chef">
+        <div class="contai ner">
+            <h2>our greatest chef</h2>
+            <!-- chefs-cards menu-->
+            <div class="chef-items">
+
+                <!--chef-card menu 1-->
+                <div class="chef-item">
+                    <img width="300px" height="400px" src="img/shef.webp" alt="">
+                    <h3>Dima</h3>
+                    <div class="chef-item_raiting">
+                        <p>Chef</p>
+                        <div class="chef-item_last">
+                            <a href="#">order now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chef-item">
+                    <img width="300px" height="400px" src="img/shef.webp" alt="">
+                    <h3>Dima</h3>
+                    <div class="chef-item_raiting">
+                        <p>Chef</p>
+                        <div class="chef-item_last">
+                            <a href="#">order now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chef-item">
+                    <img width="300px" height="400px" src="img/shef.webp" alt="">
+                    <h3>Dima</h3>
+                    <div class="chef-item_raiting">
+                        <p>Chef</p>
+                        <div class="chef-item_last">
+                            <a href="#">order now</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+    </section>
+    <section class="clients">
+        <div class="container">
+            <div class="clients-inner">
+                <h1 class="clients-title">our cuctomers say</h1>
+                <div class="clients-about">
+                    <img style="border-radius: 60%;" class="clients-about-img" src="https://img.freepik.com/free-photo/high-angle-woman-posing-mirror_23-2149426415.jpg?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                    <h2 class="clients-about-title">Name users</h2>
+                    <p class="clients-about-text">good eats</p>
+                    <br>
+                    <div class="clients-about-inner">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad earum eveniet facilis libero molestias minima repudiandae tenetur provident consequuntur. Officiis, iure totam beatae cum unde enim ab hic consectetur ut!</p>
+                        <img width="20px" height="20px" id="dot_1" src="https://img.freepik.com/premium-vector/quote-right-icon-set-double-quotation-vector-symbol-discussion-dialog-remark-open-close-quote-sign-black-filled-outlined-style_268104-7239.jpg?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                        <img width="20px" height="20px" id="dot_2" src="https://img.freepik.com/premium-vector/quote-right-icon-set-double-quotation-vector-symbol-discussion-dialog-remark-open-close-quote-sign-black-filled-outlined-style_268104-7239.jpg?ga=GA1.1.183343904.1740841489&semt=ais_hybrid" alt="">
+                    </div>
+                    <img class="clients-about-users" src="" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+    var modal = document.getElementById("loginModal");
+
+    // Получаем кнопку, которая открывает модальное окно
+    var btn = document.getElementById("loginBtn");
+
+    // Получаем элемент <span>, который закрывает модальное окно
+    var span = document.getElementsByClassName("close")[0];
+
+    // Когда пользователь нажимает на кнопку, открывается модальное окно
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // Когда пользователь нажимает на <span> (x), закрывается модальное окно
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // Когда пользователь нажимает в любом месте вне модального окна, оно закрывается
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+   
+//счетчик
+//счетчик 1
+const orderButton = document.getElementById('orderButton');
+const counterContainer = document.getElementById('counterContainer');
+const quantityDisplay = document.getElementById('quantity');
+const totalPriceDisplay = document.getElementById('totalPrice');
+const pricePerItem = 12.05; // Цена за единицу товара
+
+let quantity = 1; // Начальное количество
+
+orderButton.addEventListener('click', (event) => {
+    event.preventDefault(); // Предотвращаем переход по ссылке
+    orderButton.classList.add('hidden'); // Скрываем кнопку "Order Now"
+    counterContainer.style.display = 'flex'; // Показываем контейнер со счетчиком
+});
+
+document.getElementById('increaseButton').addEventListener('click', () => {
+    quantity++;
+    updateDisplay();
+});
+
+document.getElementById('decreaseButton').addEventListener('click', () => {
+    if (quantity > 1) {
+        quantity--;
+        updateDisplay();
+    }
+});
+
+function updateDisplay() {
+    quantityDisplay.textContent = quantity; // Обновляем отображение количества
+    totalPriceDisplay.textContent = (pricePerItem * quantity).toFixed(2) + '$'; // Обновляем общую цену
+}
+//counter 2
+    const orderButton_1 = document.getElementById('orderButton_1');
+    const counterContainer_1 = document.getElementById('counterContainer_1');
+    const decreaseButton_1 = document.getElementById('decreaseButton_1');
+    const quantityDisplay_1 = document.getElementById('quantity_1');
+    const increaseButton_1 = document.getElementById('increaseButton_1');
+    const totalPriceDisplay_1 = document.getElementById('totalPrice_1');
+    const pricePerItem_1 = 12.05;
+
+    let quantity_1 = 1;
+
+    orderButton_1.addEventListener('click',(event)=>{
+        event.preventDefault()
+        orderButton_1.classList.add('hidden');
+        counterContainer_1.style.display='flex';
+
+    });
+    increaseButton_1.addEventListener('click', (event)=>{
+            quantity_1++;
+            updateDisplay_1();
+    });
+    decreaseButton_1.addEventListener('click', (event)=>{
+        if(quantity_1>1){
+            quantity_1--;
+            updateDisplay_1();
+        }
+    });
+    function updateDisplay_1() {
+    quantityDisplay_1.textContent = quantity_1; // Обновляем отображение количества
+    totalPriceDisplay_1.textContent = (pricePerItem_1 * quantity_1).toFixed(2) + '$'; // Обновляем общую цену
+}
+
+//counter 3
+const orderButton_2 = document.getElementById('orderButton_2');
+    const counterContainer_2 = document.getElementById('counterContainer_2');
+    const decreaseButton_2 = document.getElementById('decreaseButton_2');
+    const quantityDisplay_2 = document.getElementById('quantity_2');
+    const increaseButton_2 = document.getElementById('increaseButton_2');
+    const totalPriceDisplay_2 = document.getElementById('totalPrice_2');
+    const pricePerItem_2 = 16.05;
+
+    let quantity_2 = 1;
+
+    orderButton_2.addEventListener('click',(event)=>{
+        event.preventDefault()
+        orderButton_2.classList.add('hidden');
+        counterContainer_2.style.display='flex';
+
+    });
+    increaseButton_2.addEventListener('click', (event)=>{
+            quantity_2++;
+            updateDisplay_2();
+    });
+    decreaseButton_2.addEventListener('click', (event)=>{
+        if(quantity_2>1){
+            quantity_2--;
+            updateDisplay_2();
+        }
+    });
+    function updateDisplay_2() {
+    quantityDisplay_2.textContent = quantity_2; // Обновляем отображение количества
+    totalPriceDisplay_2.textContent = (pricePerItem_2 * quantity_2).toFixed(2) + '$'; // Обновляем общую цену
+}
+
+//counter 4
+const orderButton_3 = document.getElementById('orderButton_3');
+    const counterContainer_3 = document.getElementById('counterContainer_3');
+    const decreaseButton_3 = document.getElementById('decreaseButton_3');
+    const quantityDisplay_3 = document.getElementById('quantity_3');
+    const increaseButton_3 = document.getElementById('increaseButton_3');
+    const totalPriceDisplay_3 = document.getElementById('totalPrice_3');
+    const pricePerItem_3 = 15.05;
+
+    let quantity_3 = 1;
+
+    orderButton_3.addEventListener('click',(event)=>{
+        event.preventDefault()
+        orderButton_3.classList.add('hidden');
+        counterContainer_3.style.display='flex';
+
+    });
+    increaseButton_3.addEventListener('click', (event)=>{
+            quantity_3++;
+            updateDisplay_3();
+    });
+    decreaseButton_3.addEventListener('click', (event)=>{
+        if(quantity_3>1){
+            quantity_3--;
+            updateDisplay_3();
+        }
+    });
+    function updateDisplay_3() {
+    quantityDisplay_3.textContent = quantity_3; // Обновляем отображение количества
+    totalPriceDisplay_3.textContent = (pricePerItem_3 * quantity_3).toFixed(2) + '$'; // Обновляем общую цену
+}
+//counter 5
+    const orderButton_4 = document.getElementById('orderButton_4');
+    const counterContainer_4 = document.getElementById('counterContainer_4');
+    const decreaseButton_4 = document.getElementById('decreaseButton_4');
+    const quantityDisplay_4 = document.getElementById('quantity_4');
+    const increaseButton_4 = document.getElementById('increaseButton_4');
+    const totalPriceDisplay_4 = document.getElementById('totalPrice_4');
+    const pricePerItem_4 = 15.05;
+
+    let quantity_4 = 1;
+    orderButton_4.addEventListener('click', (event)=>{
+        event.preventDefault();
+        orderButton_4.classList.add('hidden');
+        counterContainer_4.style.display='flex';
+
+    });
+
+    increaseButton_4.addEventListener('click', (event)=>{
+        quantity_4++;
+        updateDisplay_4();
+    });
+    decreaseButton_4.addEventListener('click', (event)=>{
+        if(quantity_4>1){
+            quantity_4--;
+            updateDisplay_4();
+        }
+    });
+    function updateDisplay_4(){
+        quantityDisplay_4.textContent = quantity_4;
+        totalPriceDisplay_4.textContent = (pricePerItem_4*quantity_4).toFixed(2)+'$';
+    }
+        //counter 6
+    const orderButton_5 = document.getElementById('orderButton_5');
+    const counterContainer_5 = document.getElementById('counterContainer_5');
+    const decreaseButton_5= document.getElementById('decreaseButton_5');
+    const quantityDisplay_5 = document.getElementById('quantity_5');
+    const increaseButton_5 = document.getElementById('increaseButton_5');
+    const totalPriceDisplay_5 = document.getElementById('totalPrice_5');
+    const pricePerItem_5 = 15.05;
+
+    let quantity_5 = 1;
+
+    orderButton_5.addEventListener('click', (event)=>{
+        event.preventDefault();
+        orderButton_5.classList.add('hidden');
+        counterContainer_5.style.display='flex';
+    });
+    increaseButton_5.addEventListener('click',(event=>{
+        quantity_5++;
+        updateDisplay_5();
+
+    }));
+    decreaseButton_5.addEventListener('click', (event)=>{
+        if(quantity_5>1){
+            quantity_5--;
+            updateDisplay_5();
+        }
+    });
+    function updateDisplay_5(){
+        quantityDisplay_5.textContent = quantity_5;
+        totalPriceDisplay_5.textContent = (pricePerItem_5*quantity_5).toFixed(2)+'$';
+    }
+// menu_show
+const all_categoty = document.getElementById('all_category');
+const dinner = document.getElementById('dinner');
+const lanch = document.getElementById('lanch');
+const desert = document.getElementById('desert');
+const dring = document.getElementById('dring');
+const dinner_menu = document.getElementById('1');
+const lanch_menu = document.getElementById('2');
+const desert_menu = document.getElementById('3');
+const dring_menu = document.getElementById('4');
+
+dinner.addEventListener('click', (event)=>{
+    event.preventDefault();
+    dinner.classList.remove('hidden');
+    lanch_menu.classList.add('hidden');
+    desert_menu.classList.add('hidden');
+    dring_menu.classList.add('hidden');
+});
+lanch.addEventListener('click', (event)=>{
+    event.preventDefault();
+    lanch_menu.classList.remove('hidden');
+    dinner_menu.classList.add('hidden');
+    desert_menu.classList.add('hidden');
+    dring_menu.classList.add('hidden');
+});
+desert.addEventListener('click', (event)=>{
+    event.preventDefault();
+    desert_menu.classList.remove('hidden');
+    dinner_menu.classList.add('hidden');
+    lanch_menu.classList.add('hidden');
+    dring_menu.classList.add('hidden');
+});
+dring.addEventListener('click', (event)=>{
+    event.preventDefault();
+    dring_menu.classList.remove('hidden');
+    dinner_menu.classList.add('hidden');
+    lanch_menu.classList.add('hidden');
+    desert_menu.classList.add('hidden');
+});
+all_categoty.addEventListener('click', (event)=>{
+    dinner_menu.classList.remove('hidden');
+    lanch_menu.classList.remove('hidden');
+    desert_menu.classList.remove('hidden');
+    dring_menu.classList.remove('hidden');
+});
+//slider
+const imgs = document.querySelectorAll('.a');
+var index = 0;
+
+function show() {
+    setTimeout(show, 2000);
+
+    for (let i = 0; i < imgs.length; i++) {
+        imgs[i].classList.add('hidden');
+    }
+
+    index++;
+    if (index >= imgs.length) {
+        index = 0; // Устанавливаем индекс на 0, чтобы показывать первое изображение
+    }
+    imgs[index].classList.remove('hidden');
+}
+
+show();
+
+    </script>
+
+</body>
+</html>
